@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>एक छोटीशी गोष्ट ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;justify-content:center;align-items:center;font-family:"Noto Sans Devanagari",Arial,sans-serif;background:linear-gradient(135deg,#ffe6ec,#fff5f7,#ffe0e8);overflow:hidden;color:#4a2630}
+.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.heart{position:absolute;font-size:22px;opacity:.5;animation:float 7s linear infinite}
+.heart:nth-child(1){left:10%;animation-delay:0s}.heart:nth-child(2){left:30%;animation-delay:2s}.heart:nth-child(3){left:55%;animation-delay:4s}.heart:nth-child(4){left:80%;animation-delay:1s}
+@keyframes float{from{transform:translateY(110vh) rotate(0deg)}to{transform:translateY(-20vh) rotate(360deg)}}
+.container{width:90%;max-width:650px;background:rgba(255,255,255,.9);padding:45px 35px;border-radius:28px;text-align:center;box-shadow:0 15px 45px rgba(150,60,80,.18);position:relative;z-index:2;border:1px solid rgba(255,255,255,.8)}
+.top-heart{font-size:55px;animation:heartbeat 1.5s infinite}
+@keyframes heartbeat{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+h1{margin:12px 0 25px;font-size:27px;color:#d6336c}
+.message{font-size:21px;line-height:1.9;margin-bottom:30px}
+.instruction{font-size:18px;font-weight:bold;color:#b52b57;margin-bottom:20px}
+.anger-container{display:flex;justify-content:center;gap:18px;flex-wrap:wrap}
+.anger{width:130px;padding:18px 10px;border-radius:20px;background:#fff;border:2px solid #ffd1dc;cursor:pointer;transition:all .3s ease;text-decoration:none;color:#4a2630;box-shadow:0 6px 18px rgba(180,70,100,.1)}
+.anger:hover{transform:translateY(-8px) scale(1.04);background:#fff0f4;border-color:#ff9fba;box-shadow:0 12px 25px rgba(180,70,100,.2)}
+.anger .emoji{font-size:42px;display:block;margin-bottom:8px}.anger span:last-child{font-size:16px;font-weight:bold}
+.small-note{margin-top:25px;font-size:14px;color:#99717a}
+@media(max-width:500px){.container{padding:35px 20px}h1{font-size:23px}.message{font-size:18px}.anger{width:110px}}
+</style>
+</head>
+<body>
+<div class="hearts"><div class="heart">❤️</div><div class="heart">💗</div><div class="heart">💕</div><div class="heart">❤️</div></div>
+<div class="container">
+<div class="top-heart">🥺</div>
+<h1>एक छोटीशी गोष्ट सांगायची आहे...</h1>
+<div class="message">
+मला असं वाटतं की तू रागावली असशील माझ्यावर कारण मी जवळ जवळ रोजच मॅसेज केलेत,
+हो ते वेगवेगळ्या कारणासाठी होते पण तरीही मला असं वाटतंय का माहिती नाही. ❤️
+</div>
+<div class="instruction">किती राग आहे त्यावरती क्लिक कर 😅</div>
+<div class="anger-container">
+<a href="sorry.html?level=1" class="anger"><span class="emoji">🙂</span><span>थोडासा राग</span></a>
+<a href="sorry.html?level=2" class="anger"><span class="emoji">😒</span><span>बराच राग</span></a>
+<a href="sorry.html?level=3" class="anger"><span class="emoji">😡</span><span>खूप जास्त राग</span></a>
+</div>
+<div class="small-note">योग्य पर्याय निवडताना काळजीपूर्वक विचार करा 😅❤️</div>
+</div>
+</body>
+</html>
